@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Big Nike Club!</h1>
+	<h1 id="welcomeText"></h1>
+<!-- 
+	<h2>Hello my name is </h2> -->
+	
+	<!-- <h2>All About You, baby</h2>
+	<h2 id="about"></h2> -->
+
+
+
+	<script src="script.js"></script>
+	<script>
+		console.log('This is a message from internal');
+		var user = prompt("Enter name ");
+		console.log(user);
+		// console.log(user.length);
+		// console.log("your name is " + user.length + " characters long.")
+
+		//Getting the element that has the id 'welcomeText'
+		var h1 = document.getElementById('welcomeText');
+		h1.innerHTML = 'Hello my name is ' + user + '!!!';
+
+		// var favColor = prompt('What\'s your favourite color?');
+		// h1.style.color = favColor;
+
+		// var info = prompt('Tell us about yourself');
+		// document.getElementById('about').innerHTML = info;
+
+	</script>
+</body>
+</html>
